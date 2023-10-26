@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using StockPro.Plugins.InMemory;
+using StockPro.UseCases.Inventories;
+using StockPro.UseCases.PluginInterfaces;
 using StockPro.WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
+
+builder.Services.AddTransient<IViewInventoriesByNameUseCase, ViewInventoriesByNameUseCase>();
 
 var app = builder.Build();
 

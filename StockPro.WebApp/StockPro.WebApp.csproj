@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StockPro.Plugins\StockPro.Plugins.InMemory\StockPro.Plugins.InMemory.csproj" />
+    <ProjectReference Include="..\StockPro.UseCases\StockPro.UseCases.csproj" />
+  </ItemGroup>
+
 </Project>
