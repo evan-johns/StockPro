@@ -5,13 +5,13 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.WebApp", "StockPro.WebApp\StockPro.WebApp.csproj", "{6106C5B7-0261-4E79-B64D-FF87CB0B06F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPro.UseCases", "StockPro.UseCases\StockPro.UseCases.csproj", "{33ECB7AF-D847-489D-A9AA-D220D87970A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.UseCases", "StockPro.UseCases\StockPro.UseCases.csproj", "{33ECB7AF-D847-489D-A9AA-D220D87970A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPro.CoreBusiness", "StockPro.CoreBusiness\StockPro.CoreBusiness.csproj", "{277DC5F7-953D-4F85-B42E-F187194F9518}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.CoreBusiness", "StockPro.CoreBusiness\StockPro.CoreBusiness.csproj", "{277DC5F7-953D-4F85-B42E-F187194F9518}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockPro.Plugins", "StockPro.Plugins", "{51403362-4EC2-4C87-A656-7B120A3B6BB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPro.Plugins.InMemory", "StockPro.Plugins\StockPro.Plugins.InMemory\StockPro.Plugins.InMemory.csproj", "{74775BE9-E8A7-4162-BD55-7C01CBDEED05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.Plugins.InMemory", "StockPro.Plugins\StockPro.Plugins.InMemory\StockPro.Plugins.InMemory.csproj", "{74775BE9-E8A7-4162-BD55-7C01CBDEED05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

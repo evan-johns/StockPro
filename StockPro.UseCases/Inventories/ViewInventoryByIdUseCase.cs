@@ -1,4 +1,5 @@
 ﻿using StockPro.CoreBusiness;
+using StockPro.UseCases.Inventories.Interfaces;
 using StockPro.UseCases.PluginInterfaces;
 using System;
 using System.Collections.Generic;
