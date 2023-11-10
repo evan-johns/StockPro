@@ -21,11 +21,35 @@ namespace StockPro.Plugins.InMemory
 
             };
         }
+
+        public Task AddProductAsync(Product product)
+        {
+            if (_products.Any(x => x.ProductName.Equals(product.ProductName, StringComparison.OrdinalIgnoreCase)))
+                return Task.CompletedTask;
+
+            var maxId = _products.Max(x => x.ProductId);
+            product.ProductId = maxId + 1;
+
+            _products.Add(product);
+
+            return Task.CompletedTask;
+        }
+
+        public Task<Product?> GetProductByIdAsync(int productId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<Product>> GetProductsByNameAsync(string name)
         {
             if (string.IsNullOrWhiteSpace(name)) return await Task.FromResult(_products);
             
             return _products.Where(x => x.ProductName.Contains(name, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public Task UpdateProductAsync(Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }
