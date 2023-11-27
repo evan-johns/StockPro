@@ -11,4 +11,8 @@
     <ProjectReference Include="..\StockPro.UseCases\StockPro.UseCases.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>
