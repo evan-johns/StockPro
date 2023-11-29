@@ -1,15 +1,12 @@
 ﻿@page "/"
-@using StockPro.CoreBusiness;
-@using StockPro.UseCases.Inventories;
 @using StockPro.UseCases.Inventories.Interfaces;
 
 @inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase
 @inject IEditInventoryUseCase EditInventoryUseCase
 
-<PageTitle>Test Page</PageTitle>
-<br/>
+
 <ul>
-    @foreach(var inv in _inventories)
+    @foreach (var inv in _inventories)
     {
         <li>
             @inv.InventoryName
@@ -22,12 +19,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var inventory = new Inventory { InventoryId = 1, InventoryName = "Bike Seat", Quantity = 101, Price = 2 };
-
-        await EditInventoryUseCase.ExecuteAsync(inventory);
-
-        _inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
 
     }
 
 }
+
+
+
