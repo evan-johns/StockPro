@@ -6,9 +6,10 @@
 @inject IViewInventoryByIdUseCase ViewInventoryByIdUseCase
 @inject IEditInventoryUseCase EditInventoryUseCase
 
+@attribute [Authorize(Policy = "Inventory")]
 
 <h3>Edit Inventory</h3>
-<br/>
+<br />
 
 <EditForm Model="inventory" OnValidSubmit="SaveInventory">
     <DataAnnotationsValidator></DataAnnotationsValidator>
@@ -17,7 +18,7 @@
     <div class="form-group">
         <label for="name">Inventory Name</label>
         <InputText id="name"
-        @bind-Value="inventory.InventoryName"
+                   @bind-Value="inventory.InventoryName"
                    class="form-control">
         </InputText>
     </div>
@@ -25,7 +26,7 @@
     <div class="form-group">
         <label for="quantity">Quantity</label>
         <InputNumber id="quantity"
-        @bind-Value="inventory.Quantity"
+                     @bind-Value="inventory.Quantity"
                      class="form-control">
         </InputNumber>
     </div>
@@ -33,7 +34,7 @@
     <div class="form-group">
         <label for="price">Price</label>
         <InputNumber id="price"
-        @bind-Value="inventory.Price"
+                     @bind-Value="inventory.Price"
                      class="form-control">
         </InputNumber>
     </div>
@@ -42,9 +43,8 @@
     <button type="button" class="btn btn-primary" @onclick="Cancel">Cancel</button>
 </EditForm>
 
-
-
 @code {
+
     [Parameter]
     public int InvId { get; set; }
 
@@ -57,9 +57,8 @@
 
     private async Task SaveInventory()
     {
-       await EditInventoryUseCase.ExecuteAsync(this.inventory);
+        await EditInventoryUseCase.ExecuteAsync(this.inventory);
         NavigationManager.NavigateTo("/inventories");
-
     }
 
     private void Cancel()
@@ -67,3 +66,4 @@
         NavigationManager.NavigateTo("/inventories");
     }
 }
+

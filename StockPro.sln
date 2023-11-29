@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockPro.Plugins", "StockPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.Plugins.InMemory", "StockPro.Plugins\StockPro.Plugins.InMemory\StockPro.Plugins.InMemory.csproj", "{74775BE9-E8A7-4162-BD55-7C01CBDEED05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPro.Plugins.EFCoreSqlSever", "StockPro.Plugins\StockPro.Plugins.EFCoreSqlSever\StockPro.Plugins.EFCoreSqlSever.csproj", "{5E82EA21-102E-4317-801F-94F6887329E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.Plugins.EFCoreSqlSever", "StockPro.Plugins\StockPro.Plugins.EFCoreSqlSever\StockPro.Plugins.EFCoreSqlSever.csproj", "{5E82EA21-102E-4317-801F-94F6887329E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
