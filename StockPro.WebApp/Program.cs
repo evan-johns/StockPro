@@ -8,6 +8,8 @@ using StockPro.UseCases.Inventories.Interfaces;
 using StockPro.UseCases.PluginInterfaces;
 using StockPro.UseCases.Products;
 using StockPro.UseCases.Products.Interfaces;
+using StockPro.UseCases.Reports;
+using StockPro.UseCases.Reports.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +36,10 @@ builder.Services.AddTransient<IEditProductUseCase,  EditProductUseCase>();
 builder.Services.AddTransient<IPurchaseInventoryUseCase, PurchaseInventoryUseCase>();
 builder.Services.AddTransient<IProduceProductUseCase, ProduceProductUseCase>();
 builder.Services.AddTransient<ISellProductUseCase, SellProductUseCase>();
+
+builder.Services.AddTransient<ISearchInventoryTransactionsUseCase, SearchInventoryTransactionsUseCase>();
+builder.Services.AddTransient<ISearchProductTransactionsUseCase, SearchProductTransactionsUseCase>();
+
 
 var app = builder.Build();
 

@@ -72,11 +72,6 @@
         }
     }
 
-
-
-
-
-
     private async Task<List<ItemViewModel>?> SearchProduct(string name)
     {
         var list = await ViewProductsByNameUseCase.ExecuteAsync(name);
