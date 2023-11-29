@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockPro.Plugins", "StockPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPro.Plugins.InMemory", "StockPro.Plugins\StockPro.Plugins.InMemory\StockPro.Plugins.InMemory.csproj", "{74775BE9-E8A7-4162-BD55-7C01CBDEED05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPro.Plugins.EFCoreSqlSever", "StockPro.Plugins\StockPro.Plugins.EFCoreSqlSever\StockPro.Plugins.EFCoreSqlSever.csproj", "{5E82EA21-102E-4317-801F-94F6887329E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,12 +37,17 @@ Global
 		{74775BE9-E8A7-4162-BD55-7C01CBDEED05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74775BE9-E8A7-4162-BD55-7C01CBDEED05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74775BE9-E8A7-4162-BD55-7C01CBDEED05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E82EA21-102E-4317-801F-94F6887329E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E82EA21-102E-4317-801F-94F6887329E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E82EA21-102E-4317-801F-94F6887329E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E82EA21-102E-4317-801F-94F6887329E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{74775BE9-E8A7-4162-BD55-7C01CBDEED05} = {51403362-4EC2-4C87-A656-7B120A3B6BB4}
+		{5E82EA21-102E-4317-801F-94F6887329E4} = {51403362-4EC2-4C87-A656-7B120A3B6BB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E810A82F-DDB8-4D47-9637-07BD4CCCD9E0}
